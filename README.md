@@ -3,7 +3,7 @@ Structure of a Ripple carry Full adder written in VHDL. Testbench and diagrams i
 <p  align="center">
 <img src= img/FA.png>         <img src= img/binaryAddition.png width="45%" height="300%">
 </p>
-  
+
 ## Testing
 
 While the following images show how the functionality visually, VHDL Assert statements were used to verify that of the tests output matched expected output.  
