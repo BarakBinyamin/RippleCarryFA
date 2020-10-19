@@ -43,6 +43,7 @@ When we add two numbers on paper, we reapeat common steps:
 
 #### How would one add a columb of bits? 
 An addition unit can be derived by analyzing the desired outputs from each scenario of inputs  
+
                                    
 |  A  |  B  |  Carry-in | SUM |  
 | :-: | :-: | :-------: | :-: |  
@@ -73,12 +74,12 @@ Carry-out = (A AND B) OR (A AND C) OR (B AND C)
 <p  align="center">
 <img src="img/FA.png">  
 Diagram For An Addition Unit
-</p>
+</p>  
+    
+The Ripple carry adder strings these addtion units togeather, passing the carry output to the next unit. [see diagram](https://github.com/BarakBinyamin/RippleCarryFA#RippleCarryFA)  
   
-The Ripple carry adder strings these addtion units togeather, passing the carry output to the next unit. (see Figure 1)
-
-
 ## References & Resources
-[Image from mediaspace.illinois.edu/](https://mediaspace.illinois.edu/media/t/1_sy31lyo7/99753341)  
+[Image from mediaspace.illinois.edu/](https://mediaspace.illinois.edu/media/t/1_sy31lyo7/99753341) 
+[Image From sciencedirect.com](https://www.sciencedirect.com/topics/computer-science/full-adder)  
 Xilinx Vivado  
 VHDL  
