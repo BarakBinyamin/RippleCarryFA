@@ -6,7 +6,7 @@ Structure of a Ripple carry Full adder written in VHDL. Testbench and diagrams i
 
 ## Testing
 
-While the following images show how the functionality visually, VHDL Assert statements were used to verify that of the tests output matched expected output.  
+While the following images show functionality, VHDL Assert statements were used to verify that all of the tests output matched expected output.  
   
 [see the testbench](https://github.com/BarakBinyamin/RippleCarryFA/tree/main/tst)  
 [see the code](https://github.com/BarakBinyamin/RippleCarryFA/tree/main/src) 
