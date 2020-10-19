@@ -1,0 +1,32 @@
+       digraph D {
+//default
+//rankdir="LR";
+graph [splines=ortho, nodesep=.01, ranksep=.01, overlap=scale]
+edge [arrowhead=none]
+labelloc="t";
+label="RippleCarryFA (generic alu with N=4)";
+         label="RippleCarryFA";
+		style=filled;
+		//RippleCarryFA [shape=none, label=""]
+                RippleCarryFA [shape=point,width=.01,height=.1];
+		Y [shape=none, width=2 label="SUM"]
+		node [shape=square]
+		A0 -> FA0
+		B0 -> FA0
+		A1 -> FA1
+		B1 -> FA1
+		A2 -> FA2
+		B2 -> FA2
+		A3 -> FA3
+		B3 -> FA3
+
+		edge [color=red, label="carry"]
+		FA0->FA1->FA2->FA3
+		edge [color=blue, label=""] 
+		FA0 -> Y
+  		FA1 -> Y
+		FA2 -> Y
+		FA3 -> Y
+
+		
+} 
