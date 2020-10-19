@@ -8,8 +8,8 @@ Structure of a Generic Ripple-Carry Full Adder written in VHDL. Testbench and di
 
 While the following images show functionality, VHDL Assert statements were used to verify that all of the tests output matched expected output.  
   
-[see the testbench](https://github.com/BarakBinyamin/RippleCarryFA/tree/main/tst)  
-[see the code](https://github.com/BarakBinyamin/RippleCarryFA/tree/main/src) 
+[see the testbench](https://github.com/BarakBinyamin/RippleCarryFA/tree/main/tst), [download testbench](https://barakbinyamin.github.io/RippleCarryFA/tst/RippleCarryTB.vhd)  
+[see the code](https://github.com/BarakBinyamin/RippleCarryFA/tree/main/src), [download Full_adder](https://barakbinyamin.github.io/RippleCarryFA/src/FullAdder.vhd), [downoad RippleCarryFA](https://barakbinyamin.github.io/RippleCarryFA/src/RippleCarryFA.vhd)  
   
  
 </p>
