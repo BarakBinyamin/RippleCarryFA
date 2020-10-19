@@ -35,5 +35,7 @@ While the following images show functionality, VHDL Assert statements were used 
 The SUM values in the waveform to the right show as signed Decimal. The smallest negative number a 4-bit signed number can make is -8, this is why 0-15 comes out to 1, this problem could be avoided by including the last carry for signed purposes only.
 </p>
 
-## References
+## References & Resources
 [Image from mediaspace.illinois.edu/](https://mediaspace.illinois.edu/media/t/1_sy31lyo7/99753341)
+Xilinx Vivado  
+VHDL  
