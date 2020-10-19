@@ -21,30 +21,30 @@ constant test_vector_array : test_array := (
 --2+2=4
 	(A => "0010", B => "0010", OP=>'0', SUM => "0100"),
 --15+15=30 --> 0000
-    (A => "1111", B => "1111", OP=>'0', SUM => "0000"),
+        (A => "1111", B => "1111", OP=>'0', SUM => "0000"),
 --15 + 0
 	(A => "1111", B => "0000", OP=>'0', SUM => "1111"),
 --5-5=10
-    (A => "0101", B => "0101", OP=>'0', SUM => "1010"),
+        (A => "0101", B => "0101", OP=>'0', SUM => "1010"),
     
 --0-0=0
 	(A => "0000", B => "0000", OP=>'1', SUM => "0000"),
 --15-15=0 0
-    (A => "1111", B => "1111", OP=>'1', SUM => "0000"),
+        (A => "1111", B => "1111", OP=>'1', SUM => "0000"),
 --0-15 =-15 => but smallest number is -8
 	(A => "0000", B => "1111", OP=>'1', SUM => "0000"),
 --0-8=-8
-    (A => "0000", B => "1000", OP=>'1', SUM => "1000"),
+        (A => "0000", B => "1000", OP=>'1', SUM => "1000"),
 --10-5=5
 	(A => "1010", B => "0101", OP=>'1', SUM => "0101")
     
 	);
 
 	SIGNAL OP          : std_logic := '0';
-    SIGNAL A, B, SUM   : std_logic_vector (4-1 DOWNTO 0) := (OTHERS => '0');
+        SIGNAL A, B, SUM   : std_logic_vector (4-1 DOWNTO 0) := (OTHERS => '0');
   
 	
-    signal clk	   : std_logic;
+        signal clk     : std_logic;
 	CONSTANT delay : TIME := 50 ns;
 begin
 
@@ -52,9 +52,9 @@ begin
     GENERIC map(N => 4)
 	Port map(
 		A    => A,
-		B	 => B,
-		OP	 => OP,
-		SUM => SUM
+		B    => B,
+		OP   => OP,
+		SUM  => SUM
 		);
 		
 clk_proc:process
@@ -70,7 +70,7 @@ begin
 	for i in 0 to test_vector_array'length loop
 		wait until clk='0';
 		A   <= test_vector_array(i).A;
-		B	<= test_vector_array(i).B;
+		B   <= test_vector_array(i).B;
 		OP  <= test_vector_array(i).OP;
         wait for 10ns;
         assert SUM = test_vector_array(i).SUM
