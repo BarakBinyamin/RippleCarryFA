@@ -8,7 +8,7 @@ end RippleCarryTB;
 
 architecture Behavioral of RippleCarryTB is
  type test_vector is record
-        A	: std_logic_vector(4-1 downto 0);
+                A	: std_logic_vector(4-1 downto 0);
 		B	: std_logic_vector(4-1 downto 0);
 		OP	: std_logic;
 		SUM : std_logic_vector(4-1 downto 0);
