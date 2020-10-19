@@ -78,7 +78,7 @@ Carry-out = AB or AC or BC
 Diagram For An Addition Unit
 </p>  
     
-The Ripple carry adder strings these addtion units togeather, passing the carry output to the next unit. [see diagram](https://github.com/BarakBinyamin/RippleCarryFA#RippleCarryFA)  
+The Ripple-Carry Adder works by passing the carry output to the next addition unit. [see diagram](https://github.com/BarakBinyamin/RippleCarryFA#RippleCarryFA)  
   
 ## References & Resources
 [Image from mediaspace.illinois.edu/](https://mediaspace.illinois.edu/media/t/1_sy31lyo7/99753341) 
