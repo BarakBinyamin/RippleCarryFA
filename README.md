@@ -24,7 +24,7 @@ While the following images show functionality, VHDL Assert statements were used 
   <img  align="left" src=img/BehavioralSimulationWaveform0-4.png width="85%">
   <h4> Behavioral Simulation Waveform tests 0-4 </h4>
   The SUM values in the waveform to the left show as unsigned Decimal
-  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
 </p>
 
 
