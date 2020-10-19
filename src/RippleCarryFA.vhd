@@ -16,21 +16,21 @@ use IEEE.numeric_std.ALL;
 entity RippleCarryFA is
     GENERIC (N : INTEGER := 4);
 	Port (
-		A : IN std_logic_vector(N-1 downto 0);
-		B : IN std_logic_vector(N-1 downto 0);
-		OP : IN std_logic;
+		A   : IN std_logic_vector(N-1 downto 0);
+		B   : IN std_logic_vector(N-1 downto 0);
+		OP  : IN std_logic;
 		Sum : OUT std_logic_vector(N-1 downto 0)
 	);
 end RippleCarryFA;
 
 architecture structural of RippleCarryFA is
 Component FullAdder  is
-	Port( A : in std_logic;
-          B : in std_logic;
-          Cin : in std_logic;
-          Sum  : out std_logic;
-          Cout : out std_logic
-		);
+	Port( A   : in std_logic;
+              B   : in std_logic;
+              Cin : in std_logic;
+              Sum  : out std_logic;
+              Cout : out std_logic
+	);
 	end Component;
 	
 	signal Cout_result : std_logic_vector(N-1 downto 0) := (others=> '0');
@@ -43,10 +43,10 @@ B_result(0)<= B(0) xor op;
 
 FA0 : FullAdder
 port map( 
-            A => A(0), 
-            B => B_result(0), 
-            Cin => OP, 
-            Sum => Sum(0),
+            A    => A(0), 
+            B    => B_result(0), 
+            Cin  => OP, 
+            Sum  => Sum(0),
             Cout => Cout_result(0)
             );
 
