@@ -73,6 +73,8 @@ Carry-out = (A AND B) OR (A AND C) OR (B AND C)
 
 <p  align="center">
 <img src="img/FA.png">  
+</p>  
+<p  align="center">
 Diagram For An Addition Unit
 </p>  
     
