@@ -59,12 +59,12 @@ An addition unit can be derived by analyzing the desired outputs from each scena
 |  A  |  B  |  Carry-in | Carry-out |
 | :-: | :-: | :-------: | :-------: |
 |  0  |  0  |    0      |     0     |
-|  0  |  0  |    1      |     1     |
-|  0  |  1  |    0      |     1     |
-|  0  |  1  |    1      |     0     |
-|  1  |  0  |    0      |     1     |
-|  1  |  0  |    1      |     0     |
-|  1  |  1  |    0      |     0     |
+|  0  |  0  |    1      |     0     |
+|  0  |  1  |    0      |     0     |
+|  0  |  1  |    1      |     1     |
+|  1  |  0  |    0      |     0     |
+|  1  |  0  |    1      |     1     |
+|  1  |  1  |    0      |     1     |
 |  1  |  1  |    1      |     1     |
 
 The truth tables show us:  
