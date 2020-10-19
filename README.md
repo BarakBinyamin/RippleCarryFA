@@ -32,9 +32,7 @@ While the following images show how the functionality visually, VHDL Assert stat
 <p>
 <img align="right" src=img/BehavioralSimulationWaveform5-9.png width="85%"> 
 <h4>Behavioral Simulation Waveform tests 5-9</h4>
-
-The sum values in the waveform to the left show as signed Decimal
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+The sum values in the waveform to the right show as signed Decimal. The smallest negative number a 4-bit signed number can make is -8, this is why 0-15 comes out to 1, this problem could be avoided by including the last carry for signed purposes only
 </p>
 
 ## References
