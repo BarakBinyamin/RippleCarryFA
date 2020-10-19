@@ -69,8 +69,7 @@ An addition unit can be derived by analyzing the desired outputs from each scena
 
 The truth tables show us:  
 SUM = A xor B xor Carry-in  
-Carry-out = AB or AC or BC  
-Carry-out = ((A xor B) and Carry-in)  (another way to look at it)
+Carry-out = AB or AC or BC = ((A xor B) and Carry-in)  
 
 <p  align="center">
 <img src="img/FA_.png">  
