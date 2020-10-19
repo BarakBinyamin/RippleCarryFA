@@ -1,7 +1,7 @@
 # RippleCarryFA
 Structure of a Ripple carry Full adder written in VHDL. Testbench and diagrams included.
 <p  align="center">
-<img src= img/RippleCarry.png>         <img src= img/binaryAddition.png width="45%" height="300%">
+<img src= img/RippleCarry.png width="50%">       <img src= img/binaryAddition.png width="45%" height="300%">
 </p>
 
 ## Testing
@@ -24,8 +24,6 @@ While the following images show how the functionality visually, VHDL Assert stat
   <img  align="left" src=img/BehavioralSimulationWaveform0-4.png width="85%">
   <h4> Behavioral Simulation Waveform tests 0-4 </h4>
   The SUM values in the waveform to the left show as unsigned Decimal
-
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </p>
 
 
