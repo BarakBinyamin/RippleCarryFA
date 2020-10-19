@@ -35,6 +35,49 @@ While the following images show functionality, VHDL Assert statements were used 
 The SUM values in the waveform to the right show as signed Decimal. The smallest negative number a 4-bit signed number can make is -8, this is why 0-15 comes out to 1, this problem could be avoided by including the last carry for signed purposes only.
 </p>
 
+## How it works
+
+When we add two numbers on paper, we reapeat common steps:  
+1. Line up the numbers by place significance
+2. Add each a columb of numbers, passing the carry to the next columb  
+
+#### How would one add a columb of bits? 
+An addition unit can be derived by analyzing the desired outputs from each scenario of inputs  
+                                   
+|  A  |  B  |  Carry-in | SUM |  
+| :-: | :-: | :-------: | :-: |  
+|  0  |  0  |    0      |  0  |  
+|  0  |  0  |    1      |  1  |  
+|  0  |  1  |    0      |  1  |  
+|  0  |  1  |    1      |  0  |  
+|  1  |  0  |    0      |  1  |  
+|  1  |  0  |    1      |  0  |  
+|  1  |  1  |    0      |  0  |  
+|  1  |  1  |    1      |  1  | 
+
+|  A  |  B  |  Carry-in | Carry-out |
+| :-: | :-: | :-------: | :-------: |
+|  0  |  0  |    0      |     0     |
+|  0  |  0  |    1      |     1     |
+|  0  |  1  |    0      |     1     |
+|  0  |  1  |    1      |     0     |
+|  1  |  0  |    0      |     1     |
+|  1  |  0  |    1      |     0     |
+|  1  |  1  |    0      |     0     |
+|  1  |  1  |    1      |     1     |
+
+The Truth tables show us:
+SUM = A XOR B XOR Carry-in  
+Carry-out = (A AND B) OR (A AND C) OR (B AND C)  
+
+<p  align="center">
+<img src="img/FA.png">  
+Diagram For An Addition Unit
+</p>
+  
+The Ripple carry adder strings these addtion units togeather, passing the carry output to the next unit. (see Figure 1)
+
+
 ## References & Resources
 [Image from mediaspace.illinois.edu/](https://mediaspace.illinois.edu/media/t/1_sy31lyo7/99753341)  
 Xilinx Vivado  
