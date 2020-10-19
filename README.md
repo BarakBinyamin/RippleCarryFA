@@ -36,6 +36,6 @@ The SUM values in the waveform to the right show as signed Decimal. The smallest
 </p>
 
 ## References & Resources
-[Image from mediaspace.illinois.edu/](https://mediaspace.illinois.edu/media/t/1_sy31lyo7/99753341)
+[Image from mediaspace.illinois.edu/](https://mediaspace.illinois.edu/media/t/1_sy31lyo7/99753341)  
 Xilinx Vivado  
 VHDL  
