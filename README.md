@@ -81,7 +81,7 @@ Diagram For An Addition Unit
 The Ripple-Carry Adder works by passing the carry output to the next addition unit. [see diagram](https://github.com/BarakBinyamin/RippleCarryFA#RippleCarryFA)  
   
 ## References & Resources
-[Image from mediaspace.illinois.edu/](https://mediaspace.illinois.edu/media/t/1_sy31lyo7/99753341) 
-[Image From sciencedirect.com](https://www.sciencedirect.com/topics/computer-science/full-adder)  
+[Image from mediaspace.illinois.edu/](https://mediaspace.illinois.edu/media/t/1_sy31lyo7/99753341)   
+[Image From sciencedirect.com](https://www.sciencedirect.com/topics/computer-science/full-adder)    
 Xilinx Vivado  
 VHDL  
