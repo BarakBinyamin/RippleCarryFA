@@ -14,23 +14,23 @@ While the following images show functionality, VHDL Assert statements were used 
  
 <p  align="center">
 <img src=img/BehavioralSimulationWaveform.png>   
-<br>Behavioral Simulation Waveform
+<br>Figure 1: Behavioral Simulation Waveform
 </p>
 <br>
 
 
 <p  align="center">
 <img src=img/BehavioralSimulationWaveform0-4.png>
-<h4  align="center"> Behavioral Simulation Waveform tests 0-4 </h4>
-The SUM values in the waveform to the left show as unsigned Decimal.
+<br>Figure 2: Behavioral Simulation Waveform tests 0-4  
+The SUM values in figure 2 show as unsigned Decimal.
 </p>  
 
 <br>
 
 <p  align="center">
 <img src=img/BehavioralSimulationWaveform5-9.png> 
-<h4  align="center" >Behavioral Simulation Waveform tests 5-9</h4>
-The SUM values in the waveform to the right show as signed Decimal. You may notice that 0-15 comes out to 1 in the waveform. This is because the smallest negative number a 4-bit signed number can make is -8. This problem could be avoided by optionally reading last carry.
+Figure 3: Behavioral Simulation Waveform tests 5-9    
+The SUM values Figure 3 show as signed Decimal. You may notice that 0-15 comes out to 1 in the waveform. This is because the smallest negative number a 4-bit signed number can make is -8. This problem could be avoided by optionally reading last carry.
 </p>
 
 ## How it works
