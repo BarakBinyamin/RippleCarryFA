@@ -12,25 +12,24 @@ While the following images show functionality, VHDL Assert statements were used 
 [see the code](https://github.com/BarakBinyamin/RippleCarryFA/tree/main/src), [download Full_adder](https://barakbinyamin.github.io/RippleCarryFA/src/FullAdder.vhd), [downoad RippleCarryFA](https://barakbinyamin.github.io/RippleCarryFA/src/RippleCarryFA.vhd)  
   
  
-</p>
 <p  align="center">
 <img src=img/BehavioralSimulationWaveform.png>   
 <br>Behavioral Simulation Waveform
 </p>
-<br><br><br>
+<br>
 
 
-<p>
-  <img  align="left" src=img/BehavioralSimulationWaveform0-4.png width="85%">
-  <h4> Behavioral Simulation Waveform tests 0-4 </h4>
-  The SUM values in the waveform to the left show as unsigned Decimal.
-  <br><br><br><br><br><br><br><br><br><br>
-</p>
+<p  align="center">
+<img src=img/BehavioralSimulationWaveform0-4.png width="85%">
+<br>Behavioral Simulation Waveform
+<h4> Behavioral Simulation Waveform tests 0-4 </h4>
+The SUM values in the waveform to the left show as unsigned Decimal.
+</p>  
 
+<br>
 
-
-<p>
-<img align="right" src=img/BehavioralSimulationWaveform5-9.png width="85%"> 
+<p  align="center">
+<img src=img/BehavioralSimulationWaveform5-9.png width="85%"> 
 <h4>Behavioral Simulation Waveform tests 5-9</h4>
 The SUM values in the waveform to the right show as signed Decimal. You may notice that 0-15 comes out to 1 in the waveform. This is because the smallest negative number a 4-bit signed number can make is -8. This problem could be avoided by optionally reading last carry.
 </p>
