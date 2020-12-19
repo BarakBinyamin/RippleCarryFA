@@ -42,10 +42,9 @@ When we add two numbers on paper, we reapeat common steps:
 #### How would one add a column of bits? 
 A good apraoch to designing hardware is to list out all possibilities of inputs with their corrosponding outputs, this can be seen below
 
-<center>
-  
+
 |  A  |  B  |  Carry-in | Carry-out | SUM |
-| --- | :-: | :-------: | :-------: | :-: |
+| --- | :-: | :-------: | :-------: | :-: |  
 |  0  |  0  |    0      |     0     |  0  |
 |  0  |  0  |    1      |     0     |  1  |
 |  0  |  1  |    0      |     0     |  1  |
@@ -54,8 +53,7 @@ A good apraoch to designing hardware is to list out all possibilities of inputs 
 |  1  |  0  |    1      |     1     |  0  |
 |  1  |  1  |    0      |     1     |  1  |
 |  1  |  1  |    1      |     1     |  1  |
- 
-</center> 
+  
 
 Then we can derive the logical from tables:    
 SUM = A xor B xor Carry-in    
