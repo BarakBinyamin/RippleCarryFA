@@ -45,7 +45,7 @@ A good apraoch to designing hardware is to list out all possibilities of inputs 
 <center>
   
 |  A  |  B  |  Carry-in | Carry-out | SUM |
-| --- | :-: | :-------: | :-------: | --: |
+| --- | :-: | :-------: | :-------: | :-: |
 |  0  |  0  |    0      |     0     |  0  |
 |  0  |  0  |    1      |     0     |  1  |
 |  0  |  1  |    0      |     0     |  1  |
