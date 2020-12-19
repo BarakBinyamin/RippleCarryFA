@@ -1,7 +1,7 @@
 # RippleCarryFA
 Structure of a Generic Ripple-Carry Full Adder written in VHDL. Testbench and diagrams included.
 <p  align="center">
-<img src= img/RippleCarry.png width="50%">       <img src= img/binaryAddition.png width="45%" height="300%">
+<img src= img/binaryAddition.png width="45%" height="300%">        <img src= img/RippleCarry.png width="50%">       
 </p>
 
 ## Testing
