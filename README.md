@@ -39,35 +39,26 @@ When we add two numbers on paper, we reapeat common steps:
 1. Line up the numbers by place significance
 2. Add each a columb of numbers, passing the carry to the next columb  
 
-#### How would one add a columb of bits? 
-An addition unit can be derived by analyzing the desired outputs from each scenario of inputs  
+#### How would one add a column of bits? 
+A good apraoch to designing hardware is to list out all possibilities of inputs with their corrosponding outputs, this can be seen below
 
-                                   
-|  A  |  B  |  Carry-in | SUM |  
-| :-: | :-: | :-------: | :-: |  
-|  0  |  0  |    0      |  0  |  
-|  0  |  0  |    1      |  1  |  
-|  0  |  1  |    0      |  1  |  
-|  0  |  1  |    1      |  0  |  
-|  1  |  0  |    0      |  1  |  
-|  1  |  0  |    1      |  0  |  
-|  1  |  1  |    0      |  0  |  
-|  1  |  1  |    1      |  1  | 
+<center>   
+  
+|  A  |  B  |  Carry-in | Carry-out | SUM |
+| :-: | :-: | :-------: | :-------: | :-: |
+|  0  |  0  |    0      |     0     |  0  |
+|  0  |  0  |    1      |     0     |  1  |
+|  0  |  1  |    0      |     0     |  1  |
+|  0  |  1  |    1      |     1     |  0  |
+|  1  |  0  |    0      |     0     |  1  |
+|  1  |  0  |    1      |     1     |  0  |
+|  1  |  1  |    0      |     1     |  1  |
+|  1  |  1  |    1      |     1     |  1  |
 
-|  A  |  B  |  Carry-in | Carry-out |
-| :-: | :-: | :-------: | :-------: |
-|  0  |  0  |    0      |     0     |
-|  0  |  0  |    1      |     0     |
-|  0  |  1  |    0      |     0     |
-|  0  |  1  |    1      |     1     |
-|  1  |  0  |    0      |     0     |
-|  1  |  0  |    1      |     1     |
-|  1  |  1  |    0      |     1     |
-|  1  |  1  |    1      |     1     |
-
-The truth tables show us:  
+</center>
+Then we can derive the logical from tables:  
 SUM = A xor B xor Carry-in  
-Carry-out = AB or AC or BC = ((A xor B) and Carry-in)  
+Carry-out = AB or AC orBC = ((A xor B) and Carry-in)  
 
 <p  align="center">
 <img src="img/FA_.png">  
