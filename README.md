@@ -55,7 +55,7 @@ A good apraoch to designing hardware is to list out all possibilities of inputs 
 |  1  |  1  |    1      |     1     |  1  |
   
 
-Then we can derive the logical from tables:    
+Then we can derive the logical formulas from the table:    
 SUM = A xor B xor Carry-in    
 Carry-out = AB or AC orBC = ((A xor B) and Carry-in)    
 
