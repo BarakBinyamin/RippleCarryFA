@@ -30,14 +30,14 @@ The SUM values in figure 2 show as unsigned Decimal.
 <p  align="center">
 <img src=img/BehavioralSimulationWaveform5-9.png> 
 Figure 3: Behavioral Simulation Waveform tests 5-9<br>   
-The SUM values Figure 3 show as signed Decimal. You may notice that 0-15 comes out to 1 in the waveform. This is because the smallest negative number a 4-bit signed number can make is -8. This problem could be avoided by optionally reading last carry.
+The SUM values Figure 3 show as signed Decimal. You may notice that 0-15 comes out to 1 in the waveform. This is because the smallest negative number a 4-bit signed number can make is -8. This problem could be avoided by optionally reading the most siginificant carry.
 </p>
 
 ## How it works
 
 When we add two numbers on paper, we reapeat common steps:  
 1. Line up the numbers by place significance
-2. Add each a columb of numbers, passing the carry to the next columb  
+2. Add each a column of numbers, passing the carry to the next column  
 
 #### How would one add a column of bits? 
 A good apraoch to designing hardware is to list out all possibilities of inputs with their corrosponding outputs, this can be seen below
@@ -57,7 +57,7 @@ A good apraoch to designing hardware is to list out all possibilities of inputs 
 
 Then we can derive the logical formulas from the table:    
 SUM = A xor B xor Carry-in    
-Carry-out = AB or AC orBC = ((A xor B) and Carry-in)    
+Carry-out = AB or AC or BC = ((A xor B) and Carry-in)    
 
 <p  align="center">
 <img src="img/FA_.png">  
